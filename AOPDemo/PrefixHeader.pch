@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  AOPDemo
+//
+//  Created by 飞鱼 on 2019/4/15.
+//  Copyright © 2019 xxx. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#define DEBUG 1
+
+// DDLog部分
+#ifdef DEBUG
+static const int ddLogLevel = DDLogLevelDebug;
+#else
+static const int ddLogLevel = DDLogLevelOff;
+#endif
+
+#ifdef DEBUG
+#define DLog(...) NSLog(@"%s(%p) %@", __PRETTY_FUNCTION__, self, [NSString stringWithFormat:__VA_ARGS__])
+#else
+#define DLog(...)
+#endif
+
+
+#endif /* PrefixHeader_pch */

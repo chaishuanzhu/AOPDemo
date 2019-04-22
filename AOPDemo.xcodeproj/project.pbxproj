@@ -13,9 +13,15 @@
 		71DA539822641BD500C03079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DA539722641BD500C03079 /* Assets.xcassets */; };
 		71DA539B22641BD500C03079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DA539922641BD500C03079 /* LaunchScreen.storyboard */; };
 		71DA539E22641BD500C03079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DA539D22641BD500C03079 /* main.m */; };
+		71DA53A622641FF000C03079 /* AspectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DA53A522641FF000C03079 /* AspectManager.m */; };
+		71DA53AA2264307C00C03079 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DA53A92264307C00C03079 /* NextViewController.m */; };
+		71DA53AD2264373E00C03079 /* EventList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71DA53AC2264373E00C03079 /* EventList.plist */; };
+		71DA53B822643DDF00C03079 /* MoLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DA53B722643DDF00C03079 /* MoLocationManager.m */; };
+		C4AB7938E222A8CA879972DD /* libPods-AOPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1A16CD20D1D71C05BC726E /* libPods-AOPDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F1A16CD20D1D71C05BC726E /* libPods-AOPDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AOPDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DA538B22641BD500C03079 /* AOPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DA538E22641BD500C03079 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71DA538F22641BD500C03079 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +32,17 @@
 		71DA539A22641BD500C03079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71DA539C22641BD500C03079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71DA539D22641BD500C03079 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71DA53A422641FF000C03079 /* AspectManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AspectManager.h; sourceTree = "<group>"; };
+		71DA53A522641FF000C03079 /* AspectManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AspectManager.m; sourceTree = "<group>"; };
+		71DA53A7226420A400C03079 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		71DA53A82264307C00C03079 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		71DA53A92264307C00C03079 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		71DA53AB226433E400C03079 /* AspectHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AspectHeader.h; sourceTree = "<group>"; };
+		71DA53AC2264373E00C03079 /* EventList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EventList.plist; sourceTree = "<group>"; };
+		71DA53B622643DDF00C03079 /* MoLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoLocationManager.h; sourceTree = "<group>"; };
+		71DA53B722643DDF00C03079 /* MoLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoLocationManager.m; sourceTree = "<group>"; };
+		DFC8183736E0906A851A2159 /* Pods-AOPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOPDemo.debug.xcconfig"; path = "Target Support Files/Pods-AOPDemo/Pods-AOPDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F86F2ABCB74603B862764384 /* Pods-AOPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOPDemo.release.xcconfig"; path = "Target Support Files/Pods-AOPDemo/Pods-AOPDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +50,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AB7938E222A8CA879972DD /* libPods-AOPDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FA0815A1410D63F97EA53A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFC8183736E0906A851A2159 /* Pods-AOPDemo.debug.xcconfig */,
+				F86F2ABCB74603B862764384 /* Pods-AOPDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		71DA538222641BD500C03079 = {
 			isa = PBXGroup;
 			children = (
 				71DA538D22641BD500C03079 /* AOPDemo */,
 				71DA538C22641BD500C03079 /* Products */,
+				3FA0815A1410D63F97EA53A3 /* Pods */,
+				7B17FD8463520D6B61ACBA19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +87,58 @@
 		71DA538D22641BD500C03079 /* AOPDemo */ = {
 			isa = PBXGroup;
 			children = (
+				71DA53B522643DDF00C03079 /* Location */,
+				71DA53B92264624800C03079 /* Aop */,
 				71DA538E22641BD500C03079 /* AppDelegate.h */,
 				71DA538F22641BD500C03079 /* AppDelegate.m */,
 				71DA539122641BD500C03079 /* ViewController.h */,
 				71DA539222641BD500C03079 /* ViewController.m */,
+				71DA53A82264307C00C03079 /* NextViewController.h */,
+				71DA53A92264307C00C03079 /* NextViewController.m */,
+				71DA53A7226420A400C03079 /* PrefixHeader.pch */,
+				71DA53BA2264626C00C03079 /* Supporting Files */,
+			);
+			path = AOPDemo;
+			sourceTree = "<group>";
+		};
+		71DA53B522643DDF00C03079 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				71DA53B622643DDF00C03079 /* MoLocationManager.h */,
+				71DA53B722643DDF00C03079 /* MoLocationManager.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		71DA53B92264624800C03079 /* Aop */ = {
+			isa = PBXGroup;
+			children = (
+				71DA53AC2264373E00C03079 /* EventList.plist */,
+				71DA53AB226433E400C03079 /* AspectHeader.h */,
+				71DA53A422641FF000C03079 /* AspectManager.h */,
+				71DA53A522641FF000C03079 /* AspectManager.m */,
+			);
+			path = Aop;
+			sourceTree = "<group>";
+		};
+		71DA53BA2264626C00C03079 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				71DA539422641BD500C03079 /* Main.storyboard */,
 				71DA539722641BD500C03079 /* Assets.xcassets */,
 				71DA539922641BD500C03079 /* LaunchScreen.storyboard */,
 				71DA539C22641BD500C03079 /* Info.plist */,
 				71DA539D22641BD500C03079 /* main.m */,
 			);
-			path = AOPDemo;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B17FD8463520D6B61ACBA19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F1A16CD20D1D71C05BC726E /* libPods-AOPDemo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +148,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71DA53A122641BD600C03079 /* Build configuration list for PBXNativeTarget "AOPDemo" */;
 			buildPhases = (
+				96D2470A8C431CB36DBF2A33 /* [CP] Check Pods Manifest.lock */,
 				71DA538722641BD500C03079 /* Sources */,
 				71DA538822641BD500C03079 /* Frameworks */,
 				71DA538922641BD500C03079 /* Resources */,
@@ -131,17 +202,46 @@
 				71DA539B22641BD500C03079 /* LaunchScreen.storyboard in Resources */,
 				71DA539822641BD500C03079 /* Assets.xcassets in Resources */,
 				71DA539622641BD500C03079 /* Main.storyboard in Resources */,
+				71DA53AD2264373E00C03079 /* EventList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96D2470A8C431CB36DBF2A33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AOPDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71DA538722641BD500C03079 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71DA53B822643DDF00C03079 /* MoLocationManager.m in Sources */,
+				71DA53AA2264307C00C03079 /* NextViewController.m in Sources */,
 				71DA539322641BD500C03079 /* ViewController.m in Sources */,
+				71DA53A622641FF000C03079 /* AspectManager.m in Sources */,
 				71DA539E22641BD500C03079 /* main.m in Sources */,
 				71DA539022641BD500C03079 /* AppDelegate.m in Sources */,
 			);
@@ -283,11 +383,14 @@
 		};
 		71DA53A222641BD600C03079 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFC8183736E0906A851A2159 /* Pods-AOPDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HB35X95BMT;
-				INFOPLIST_FILE = AOPDemo/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/AOPDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/AOPDemo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +403,14 @@
 		};
 		71DA53A322641BD600C03079 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F86F2ABCB74603B862764384 /* Pods-AOPDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HB35X95BMT;
-				INFOPLIST_FILE = AOPDemo/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/AOPDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/AOPDemo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
